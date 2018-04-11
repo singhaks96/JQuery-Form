@@ -1,0 +1,82 @@
+#login_container
+{
+	padding: 0px;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+#login_form,#register_form, #feedback_form, #inquiry_form
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+  display: none;
+  font-family:helvetica;
+  color:white;
+
+}
+div .login, .register , .inquiry , .feedback{
+	border: solid 1px #c3c3c3;
+	margin: 0px;
+	padding: 15px;
+	cursor: pointer;
+	text-align: center;
+	color:#0d3b84;
+	font-weight: bolder;
+  border-radius:3px;
+}
+
+input[type="text"],input[type="password"],input[type="email"],input[type="Date"]
+{
+  margin-top:4px;
+  width:500px;
+  height:30px;
+  border:none;
+  border-radius:3px;
+}
+button
+{
+  cursor: pointer;
+  margin-top:20px;
+  width:200px;
+  height:40px;
+  background:none;
+  border:none;
+  background-color:#0431B4;
+  color:white;
+  font-size:20px;
+  border-radius:3px;
+}
+legend{
+	font-weight: bold;
+  background-color: brown;
+}
+fieldset{
+	border: 3px ridge black;
+  background-image: url('../images/smilies-bank-sit-rest-160739.jpeg');
+  height: 100%;
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+	padding: 200px;
+	text-align: center;
+	background-image: url("../images/yoschi-fig-funny-colorful-160822.jpeg");
+  background-position: top;
+  width:80%;
+  height:10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+	font-size: 32px;
+	font-weight: bold;
+  color:white;
+}
+span{
+  font-weight: bold;
+}
+body{
+  background-image: url("../images/yoschi-fig-funny-colorful-160822.jpeg");
+   background-repeat: no-repeat;
+  background-size: cover;
+}

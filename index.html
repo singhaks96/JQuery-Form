@@ -1,0 +1,102 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<body>
+	<div id ="login_container"> 
+		<header>SLIDE DOWN FORM LIST WITH VALIDATION</header>
+		<div class = 'login' onClick="openLoginForm();">Login Form</div>
+		<div id="login_form">
+			<form action="" method="post" name="form1" onsubmit = "return validateLogin();">
+				<fieldset>
+				<legend>Login Form</legend>
+					FirstName
+					<br><input type="text" name="fname" id="fname1" />&nbsp;
+					<span id="fn1" style="color:red"></span><br /><br>
+					LastName
+					<br><input type="text" name="lname" id="lname1"/>&nbsp;
+					<span id="ln1" style="color:red"></span><br /><br>
+					Email
+					<br><input type="text" name="email" id = "email1"/>&nbsp;
+					<span id="e1" style="color:red"></span><br/><br>
+					Password 
+					<br><input type="password" name="pword" id="pass1"/>&nbsp;
+					<span id="pw1" style="color:red"></span><br />
+					<br><button class="submit">Submit</button><br />
+				</fieldset>
+			</form>
+		</div>
+
+		<div class = 'register' onClick="openRegisterForm()">Registration Form</div>
+		<div id="register_form">
+			<form action="" method="post" name="form2" onsubmit = "return validateRegistration();">
+				<fieldset>
+				<legend>Registration Form</legend>
+					FirstName
+					<br><input type="text" name="fname" id="fname2"/>&nbsp;
+					<span id="fn2" style="color:red"></span><br /><br><br>
+					LastName
+					<br><input type="text" name="lname" id="lname2"/>&nbsp;
+					<span id="ln2" style="color:red"></span><br /><br><br>
+					EmailId
+					<br><input type="email" name="email" id="email2"/>&nbsp;
+					<span id="e2" style="color:red"></span><br /><br><br>
+					Password 
+					<br><input type="password" name="pword" id="pass2"/>&nbsp;
+					<span id="pw2" style="color:red"></span><br /><br><br>
+					Date of Birth
+					<br><select id="days"></select>
+					<select id="months"></select>
+					<select id="years"></select>&nbsp;
+					<span id="message" style="color:red"></span><br />
+					<br><button class="submit" >Submit</button><br />
+				</fieldset>
+			</form>
+		</div>
+
+		<div class = 'inquiry' onClick="openInquiryForm()">Inquiry Form</div>
+		<div id="inquiry_form">
+			<form action="" method="post" name="form3" onsubmit = "return validateInquiry();">
+				<fieldset>
+				<legend>Inquiry Form</legend>
+					FirstName
+					<br><input type="text" name="fname" id="fname3"/>&nbsp;
+					<span id="fn3" style="color:red"></span><br /><br>
+					LastName
+					<br><input type="text" name="lname" id="lname3"/>&nbsp;
+					<span id="ln3" style="color:red"></span><br /><br>
+					Email
+					<br><input type="email" name="email" id="email3"/>&nbsp;
+					<span id="e3" style="color:red"></span><br /><br>
+					Password 
+					<br><input type="password" name="pword" id="pass3"/>&nbsp;
+					<span id="pw3" style="color:red"></span><br />
+					<br><button class="submit" onClick = "validateLogin();">Submit</button><br />
+				</fieldset>
+			</form>
+		</div>
+
+		<div class = 'feedback' onClick="openFeedbackForm()">Feedback Form</div>
+		<div id="feedback_form">
+			<form action="" method="post" name="form4" onsubmit = "return validateFeedback();">
+				<fieldset>
+				<legend>Feedback Form</legend>
+					Email
+					<br><input type="email" name="email" id="email4"/>&nbsp;
+					<span id="e4" style="color:red"></span><br /><br>
+					Give Your Feedback 
+					<br><textarea rows="4" cols="50" name="comment" id="feedback"form="form4"></textarea>&nbsp;
+					<span id="comment" style="color:red"></span>
+					<br><button class="submit" onClick = "validateLogin();">Submit</button><br />
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/myScript.js"></script>
+<script type="text/javascript" src="js/myScript1.js"></script>
+<script type="text/javascript" src="js/dob.js"></script>
+</html>
